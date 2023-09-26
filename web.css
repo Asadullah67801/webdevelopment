@@ -25,3 +25,17 @@ background-repeat: no-repeat;
 color: white;
 font-size: 18px;
 }
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 40%;
+    border-radius: 10px;
+    transform: translatey(-50%,-50%);
+    top:30%;
+    height: 400px;
+    width:300px;
+  
+    border: 1px solid white;
+}
