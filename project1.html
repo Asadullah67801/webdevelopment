@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://d33wubrfki0l68.cloudfront.net/css/337dd403d9768f89d635c0c94a48a2892d02f147/style.6d1a1ff4.css' rel='stylesheet'/>
+    <link href='https://d33wubrfki0l68.cloudfront.net/css/337dd403d9768f89d635c0c94a48a2892d02f147/style.6d1a1ff4.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Slab:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/b0cdd7a0d4.js" crossorigin></script>
     <link rel="stylesheet" href="web.css">
     <title>Document</title>
 </head>
-<body>
+<body id="close" onclick="close()">
     
     <header>
-        <nav>
-            <a href=""><img src=" https://preview.colorlib.com/theme/finloans/img/logo.png"></a>
-            <div class="navlinks">
+        <nav >
+            <a href=""><img src="https://tse1.mm.bing.net/th?id=OIP.5DdHKtyyNnv35kJln36plAHaF7&pid=Api&rs=1&c=1&qlt=95&w=152&h=121"></a>
+            <div class="navlinks" id="navlinks">
+
+                <i class="fa fa-times" onclick="hide()"></i> 
             <ul>
+          
                 <li>Home</li>
-                <li>loan</li>
-                <li>About</li>
-                <li>Pages</li>
-                <li>Blog</li>
-                <li>FAQ</li>
+                <li>Coffees</li>
+               
                 <li>contact</li>
             </ul>
         </div>
+        <i class="fa fa-bars" onclick="show()"></i>
         </nav>
 
 
@@ -30,20 +39,62 @@
     
         </header>
 
+        <p>welcome we deliver Exciting Coffees which appeal the mouth of customer</p>
+
 
         <!--- login form in feature1 than merge with main-->
-        <div class="form">
-            <form>
+     
+        <div   class="form" > 
+            <form name="myform" onsubmit="return validateForm()">
+                <div class="logo">
+                    <img src=" https://tse1.mm.bing.net/th?id=OIP.fA76X683IFAMK2vv3Ug-fQHaF7&pid=Api&rs=1&c=1&qlt=95&w=152&h=121">
+                </div>
 
                 <div class="input1">
-                    <input type="text" placeholder="Enter name">
+                    <input type="Email" name="Email"placeholder="Enter Email" >
+                    <i class="fa fa-envelope"></i>
                 </div>
                 <div class="input1">
-                    <input type="email" placeholder="Email">
+                    <input type="password" name="password" placeholder=" Enter password" >
+                    <i class="fa fa-eye"></i>
                 </div>
+                <input type="submit" value="register">
             </form>
-        </div>
+         
 
+
+        </div>
+    
+    </div>
+        
+       
+<script>
+    var nav=document.getElementById("navlinks");
+    function show(){
+        navlinks.style.right="0px";
+    }
+    function hide(){
+        navlinks.style.right="-250px";
+    }
+    var c=document.getElementById("close");
+  function validateForm(){
+    var email=document.myform.Email.value;
+var password=document.myform.password.value;
+if(password.length<6){
+    alert("password must be greater than 10");
+    return false;
+}
+else if(email==null||email==""){
+alert("email not be blanked");
+return false;
+}
+  }
+
+
+
+
+    
+    </script>
 
 </body>
 </html>
