@@ -197,18 +197,34 @@ input[type="submit"]{
     color:white;
     background-color: transparent;
     border-bottom: 1px solid white;
-    transition: 0.2s;
-    animation: 1s linear forwards;
+    transition: 0.5s ease-in-out ;
+    animation: 5s linear forwards;
+    
     animation-name: name;
 }
 @keyframes name {
     0%{
-        transform: rotate(10deg);
+        border: 1px solid red;
+        bottom:10px;
     }
     20%{
-        transform: rotate(360deg);
+        border: 1px solid green;
+        bottom:30px;
+        background-color: gray;
     }
-    
+  
+}
+input{
+    color: white;
+}
+p{
+    font-size: 20px;
+}
+input :hover{
+    visibility: hidden;
+}
+::placeholder{
+margin-bottom:2px;
 }
 
 input{
