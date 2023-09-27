@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://d33wubrfki0l68.cloudfront.net/css/337dd403d9768f89d635c0c94a48a2892d02f147/style.6d1a1ff4.css' rel='stylesheet'/>
+    <link href='https://d33wubrfki0l68.cloudfront.net/css/337dd403d9768f89d635c0c94a48a2892d02f147/style.6d1a1ff4.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Slab:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b0cdd7a0d4.js" crossorigin></script>
+    <link rel="stylesheet" href="loginform11.css">
+    <title>Flight ticket booking</title>
+</head>
+<body>
+<div class="bg-image">
+    <div class="content">
+        <header>Book Your Flight</header>
+        <form action="#">
+
+            <div class="field">
+                <span class="fa fa-user"></span>
+                <input type="text" required placeholder="Email">
+                </div>
+                <div class="field">
+                    <span class="fa fa-lock"></span>
+                    <input type="password" class="pass-key" placeholder="password">
+                    <span class="show"> Show
+</span>
+
+</div>
+<div class="pass">
+    <a href="#">Forgot password</a>
+
+</div>
+<div class="field">
+    <input type="submit" value="login">
+    </div>
+        </form>
+        <div class="login">
+            Or login with 
+            </div>
+            <div class="links">
+                <div class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+            </div>
+           <div class="instagram">
+                    <i class="fab fa-instagram"></i>
+            </div>
+    </div>
+    <div class="signup">Dont have acount?
+        <a href="#">Signup Now</a>
+    </div>
+    </div>
+</div>
+<script>
+    const passfield=document.querySelector(".pass-key");
+    const showbtn=document.querySelector(".show");
+    showbtn.addEventListener("click",function(){
+        if(passfield.type==="password"){
+            passfield.type="text";
+            showbtn.textContent="HIDE";
+            showbtn.style.color="#222";
+        }
+        else{
+            passfield.type="password";
+            showbtn.textContent="SHOW";
+            showbtn.style.color="green";
+        }
+    });
+</script>
+</body>
+</html>
